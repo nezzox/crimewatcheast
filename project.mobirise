@@ -33,7 +33,9 @@
         "bodyPadding": false,
         "bodyBG": "#ffffff"
       },
-      "additionalSetColors": []
+      "additionalSetColors": [
+        "#f1f4fa"
+      ]
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.8",
@@ -43,7 +45,7 @@
     "google-analytics": "",
     "siteUrl": "undefined",
     "сanonical-url": "",
-    "uniqCompNum": 9,
+    "uniqCompNum": 16,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png"
   },
@@ -99,13 +101,312 @@
             }
           },
           "_name": "header4",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1080.jpg\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#022e93\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#a54997\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-10 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Brottsplats</b>&nbsp;Östergötland</h1>\n                <p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">Med applikationen \"Brottsplats östergötland\" så kan du hålla dig uppdaterad på händelser och nyheter direkt från Polisens egna flöden på ett enkelt och smidigt sätt.</p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://1drv.ms/u/s!ArH5JPewHi7pkJRqaFSF7-ajoLxQNA?e=tM0112\" data-app-placeholder=\"Type Text\" target=\"_blank\">Ladda ner</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#19a3c1\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1080.jpg\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#022e93\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#a54997\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-10 mbr-col-md-12\">\n                <h1 class=\"mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Brottsplats</b>&nbsp;Östergötland</h1>\n                <p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">Med applikationen \"Brottsplats östergötland\" så kan du hålla dig uppdaterad på händelser och nyheter direkt från Polisens egna flöden på ett enkelt och smidigt sätt. Få notifikationer när något händer i Östergötland så slipper du undra vart ambulansen du såg för en stund sen var på väg någonstans.</p>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"https://1drv.ms/u/s!ArH5JPewHi7pkJRqaFSF7-ajoLxQNA?e=tM0112\" data-app-placeholder=\"Type Text\" target=\"_blank\">Ladda ner</a> <a class=\"btn btn-lg mbr-editable-button btn-white\" href=\"index.html#features7-a\" data-app-placeholder=\"Type Text\">Hur du installerar</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rBor9oIEyY",
+          "_anchor": "header4-6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@flexDirection)": {
+              ".mbr-row": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              },
+              ".block1": {
+                "max-width": "480px"
+              }
+            },
+            "& when not (@flexDirection)": {
+              ".block1": {
+                "max-width": "480px"
+              }
+            },
+            "& when not (@showTitle)": {
+              ".amp-iconfont": {
+                "margin-bottom": "1.5rem"
+              }
+            },
+            ".relative": {
+              "position": "relative",
+              "min-height": "400px"
+            },
+            ".img-wrap": {
+              "z-index": "0",
+              "margin": "auto",
+              "max-width": "90%",
+              "border-radius": "2rem",
+              "box-shadow": "0px 0px 30px 10px rgba(0, 0, 0, 0.2)",
+              "-webkit-mask-image": "-webkit-radial-gradient(white, black)"
+            },
+            "amp-img": {
+              "border-radius": "2rem",
+              "max-width": "100%",
+              "margin": "auto"
+            },
+            "h1": {
+              "margin": "0"
+            },
+            "p": {
+              "line-height": "1.3",
+              "margin-bottom": "0"
+            },
+            ".wrap": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "padding": "0.5rem"
+            },
+            "h2": {
+              "margin": "0"
+            },
+            ".block-1": {
+              "position": "absolute",
+              "top": "150px",
+              "left": "-2rem",
+              "background": "linear-gradient(135deg, @bg11 0%, @bg12 100%)",
+              "max-width": "400px",
+              "border-radius": "1rem",
+              "padding": "1rem 2rem",
+              "margin-bottom": "2rem",
+              "box-shadow": "0px 0px 30px 10px rgba(0, 0, 0, 0.2)",
+              "z-index": "2"
+            },
+            ".block1": {
+              "color": "#313131"
+            },
+            "@media (max-width: 991px)": {
+              ".block-1": {
+                "top": "230px",
+                "left": "0rem"
+              },
+              ".img-wrap": {
+                "margin-top": "2rem"
+              }
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              "margin-right": "1rem",
+              ".amp-iconfont": {
+                "background": "-webkit-gradient(linear, left top, left bottom, from(@iconsColor1), to(@iconsColor2))",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent",
+                "font-size": "~\"@{iconsSize}rem\""
+              }
+            }
+          },
+          "_name": "features7",
+          "_customHTML": "<section class=\"features7\" group=\"Features\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Block 1 Gradient Color 1\" name=\"bg11\" value=\"#361291\">\n        <input type=\"color\" title=\"Block 1 Gradient Color 1\" name=\"bg12\" value=\"#e3699a\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"10\" step=\"0.5\" value=\"5.5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Gradient Color 1\" name=\"iconsColor1\" value=\"#5fc7c6\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Gradient Color 2\" name=\"iconsColor2\" value=\"#6394ff\" condition=\"showIcons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f1f4fa\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#ffffff\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12\">\n                <span class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont mbri-touch\" mbr-if=\"showIcons\"></span>\n                </span>\n                <svg class=\"icon-gradient\">\n                    <defs>\n                        <linearGradient id=\"icoGradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n                            <stop offset=\"0%\" stop-color=\"{{iconsColor1}}\"></stop>\n                            <stop offset=\"100%\" stop-color=\"{{iconsColor2}}\"></stop>\n                        </linearGradient>\n                    </defs>\n                </svg>\n                <h1 class=\"mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    <b>Android!&nbsp;</b>Hur du installerar!</h1>\n                    <p class=\"mbr-fonts-style mbr-text block1\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".block1, .mbr-section-btn\">Gå till \"inställningar\" och gå sen in under \"säkerhet\". Det kan heta lite annorlunda beroende på tillverkare, Samsung har exempelvis döpt det till \"Biometrik &amp; säkerhet\".<br><br>Väl inne i säkerhets inställningarna så letar du fram \"Okända källor\" och bekräftar den inställningen. På nyare telefoner kan det vara att du måste godkänna per applikation vilka som får installera okända appar. Då heter denna inställning förmodligen något med \"Okända appar\" eller liknande.<br>\n                    </p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-6\"><a class=\"btn-arrow text-warning\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Read More →</a></div>\n                </div>\n                <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 relative\">\n                    <div class=\"block-1\">\n                        <p class=\"mbr-fonts-style block2 mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".block2\">Med Android telefoner kan du installera applikationer utan att använda google play eller telefontillverkarens app affär.</p>\n                    </div>\n                    <div class=\"img-wrap\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/mbr-972x648.jpg\" alt=\"Mobirise\" width=\"486\" layout=\"responsive\" height=\"324\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-972x648.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>",
+          "_cid": "rBswNN7q76",
+          "_anchor": "features7-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@flexDirection)": {
+              ".mbr-row": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              },
+              ".block1": {
+                "max-width": "480px"
+              }
+            },
+            "& when not (@flexDirection)": {
+              ".block1": {
+                "max-width": "480px"
+              }
+            },
+            "& when not (@showTitle)": {
+              ".amp-iconfont": {
+                "margin-bottom": "1.5rem"
+              }
+            },
+            ".relative": {
+              "position": "relative",
+              "min-height": "400px"
+            },
+            ".img-wrap": {
+              "z-index": "0",
+              "margin": "auto",
+              "max-width": "90%",
+              "border-radius": "2rem",
+              "box-shadow": "0px 0px 30px 10px rgba(0, 0, 0, 0.2)",
+              "-webkit-mask-image": "-webkit-radial-gradient(white, black)"
+            },
+            "amp-img": {
+              "border-radius": "2rem",
+              "max-width": "100%",
+              "margin": "auto"
+            },
+            "h1": {
+              "margin": "0"
+            },
+            "p": {
+              "line-height": "1.3",
+              "margin-bottom": "0"
+            },
+            ".wrap": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "padding": "0.5rem"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#0a193b"
+            },
+            "h2": {
+              "margin": "0"
+            },
+            ".block-1": {
+              "position": "absolute",
+              "top": "150px",
+              "left": "-2rem",
+              "background": "linear-gradient(135deg, @bg11 0%, @bg12 100%)",
+              "max-width": "400px",
+              "border-radius": "1rem",
+              "padding": "1rem 2rem",
+              "margin-bottom": "2rem",
+              "box-shadow": "0px 0px 30px 10px rgba(0, 0, 0, 0.2)",
+              "z-index": "2"
+            },
+            ".block1": {
+              "color": "#313131"
+            },
+            "@media (max-width: 991px)": {
+              ".block-1": {
+                "top": "230px",
+                "left": "0rem"
+              },
+              ".img-wrap": {
+                "margin-top": "2rem"
+              }
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "width": "~\"@{iconsSize}rem\"",
+              "height": "~\"@{iconsSize}rem\"",
+              "margin-right": "1rem",
+              ".amp-iconfont": {
+                "background": "-webkit-gradient(linear, left top, left bottom, from(@iconsColor1), to(@iconsColor2))",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent",
+                "font-size": "~\"@{iconsSize}rem\""
+              }
+            }
+          },
+          "_name": "features15",
+          "_customHTML": "<section class=\"features15\" group=\"Features\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Block 1 Gradient Color 1\" name=\"bg11\" value=\"#361291\">\n        <input type=\"color\" title=\"Block 1 Gradient Color 1\" name=\"bg12\" value=\"#e3699a\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"10\" step=\"0.5\" value=\"7\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Gradient Color 1\" name=\"iconsColor1\" value=\"#6394ff\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Gradient Color 2\" name=\"iconsColor2\" value=\"#2bb4c5\" condition=\"showIcons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f1f4fa\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#ffffff\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12\">\n                <span class=\"iconfont-wrapper\">\n                    <span mbr-icon class=\"amp-iconfont fa-warning fa\" mbr-if=\"showIcons\"></span>\n                </span>\n                <svg class=\"icon-gradient\">\n                    <defs>\n                        <linearGradient id=\"icoGradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n                            <stop offset=\"0%\" stop-color=\"{{iconsColor1}}\"></stop>\n                            <stop offset=\"100%\" stop-color=\"{{iconsColor2}}\"></stop>\n                        </linearGradient>\n                    </defs>\n                </svg>\n                <h1 class=\"mbr-fonts-style mbr-section-title mbr-black\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    <b>Launch </b>A Unique Project</h1>\n                    <p class=\"mbr-fonts-style mbr-text block1\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".block1, .mbr-section-btn\">Brottsplats Östergötland appen är inte verifierad av Google Play Protect och kan därför generera en varning om detta. Du väljer såklart då att \"installera ändå\" i alternativet.                        <br>\n                    </p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n                        <a class=\"btn btn-warning\" href=\"https://mobirise.com\">READ MORE</a>\n                    </div>\n                </div>\n                <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 relative\">\n                    <div class=\"block-1\">\n                        <p class=\"mbr-fonts-style block2 mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".block2\">\n                        Brottsplats Östergötland är gratis och det kostar pengar att gå genom googles verifieringsprocess, därför tillhandahålls den inte genom google play.</p>\n                    </div>\n                    <div class=\"img-wrap\">\n                        <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/mbr-1-972x648.jpg\" alt=\"Mobirise\" width=\"486\" layout=\"responsive\" height=\"324\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1-972x648.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>",
+          "_cid": "rBsA8MKkel",
+          "_anchor": "features15-c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradient)": {
+                "background": "linear-gradient(135deg, @bg-value 0%, @bgcolor2 100%)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when not (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background-color": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              },
+              "& when (@overlayGradient)": {
+                ".mbr-overlay": {
+                  "background": "linear-gradient(135deg, @overlayColor 0%, @ovcolor2 100%)",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#0a193b"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#585858"
+            }
+          },
+          "_name": "footer3",
+          "_customHTML": "<section class=\"footer3\" group=\"Footers\" plugins=\"amp-main, font-awesome\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f1f4fa\" selected>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Background Gradient\" name=\"gradient\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"bgcolor2\" value=\"#19a3c1\" condition=\"gradient == true && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"checkbox\" title=\"Overlay Gradient\" name=\"overlayGradient\" condition=\"overlay == true && bg.type == 'image'\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"ovcolor2\" value=\"#022e93\" condition=\"overlay == true && overlayGradient == true && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-lg-8 mbr-col-md-12 align-center\">\n                <h2 class=\"mbr-fonts-style mbr-bold mbr-section-title\" mbr-theme-style=\"display-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Brottsplats&nbsp;<span style=\"font-weight: normal;\">Östergötland</span></h2>\n                <p class=\"mbr-fonts-style mbr-text\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\"><i><b>© 2019, Jonathan Gryveken</b></i><br>Händelser, Nyheter och Pressrelease-flöden tillhandahålls via Polisens RSS.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rBsBJBJXNO",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "header4-6"
+          "_anchor": "footer3-f"
         }
       ]
     },
@@ -139,11 +440,11 @@
           "_name": "amp-facebook-comments",
           "_customHTML": "<section class=\"amp-facebook-comments mbr-section\" group=\"Custom block\" plugins=\"amp-main, amp-facebook-comments\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\n        <header>Facebook</header>\n        <input type=\"range\" inline title=\"Max Width\" name=\"maxWidth\" min=\"30\" max=\"100\" value=\"60\" step=\"1\">\n        <input type=\"range\" inline title=\"Number of Posts\" name=\"numpostsFacebook\" min=\"1\" max=\"10\" value=\"10\" step=\"1\">\n        <input type=\"text\" title=\"URL of This Page on Your Site\" name=\"linkPostFacebook\" value=\"https://nezzox.github.io/crimewatcheast/chat.html\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background9.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container align-center\">\n        <h3 class=\"mbr-fonts-style mbr-bold mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Disskussion om händelser i Östergötland</h3>\n        <h4 class=\"mbr-fonts-stylembr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">För samtal i en god och civiliserad ton. Innehållet modereras ej.</h4>\n        <div class=\"facebook-wrapper mbr-col-lg-8\">\n            <amp-facebook-comments height=\"50\" layout=\"fixed-height\" class=\"container comments-container mobirise-loader\" data-numposts=\"{{numpostsFacebook}}\" data-href=\"{{linkPostFacebook}}\">\n                <div placeholder class=\"placeholder\"></div>\n            </amp-facebook-comments>\n        </div>\n    </div>\n\n</section>",
           "_cid": "rBorV5oXCB",
+          "_anchor": "amp-facebook-comments-7",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "amp-facebook-comments-7"
+          "_params": {}
         }
       ]
     }
